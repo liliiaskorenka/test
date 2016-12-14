@@ -1,0 +1,334 @@
+@import "vars.less";
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  line-height: 0;
+  font-size: 0;
+  font-family: @Tahoma;
+}
+.header {
+  height: 50px;
+}
+.content {
+  padding-bottom: 170px;
+  min-height: 100%;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.footer {
+  margin-top: -170px;
+  height: 170px;
+  background: #66747d;
+}
+.navbar-default,
+  header{
+  background: #eeeeee;
+  border: none;
+}
+.nav_link {
+  font-family: "Georgia", serif;
+  font-size: 16px;
+  color: #636b74;
+  letter-spacing: 0.3px;
+}
+.nav_item.active .nav_link{
+  padding-top: 11px;
+  background: #66747d !important;
+  color: #f7f7f7 !important;
+}
+
+.nav_item:hover {
+  background: #d9dadc;
+  transition: background .2s;
+}
+.active {
+  border-top: 4px solid @orange;
+}
+
+.main-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.main-header:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #dcdddf;
+  top: 50%;
+  margin-top: -1px;
+}
+.main-header__text {
+  background: white;
+  position: relative;
+  z-index: 1;
+  background: #66747d;
+  color: #f7f7f7;
+  padding: 5px 25px 5px 25px;
+  border-top: 4px solid @orange;
+  font-family: "Georgia", serif;
+  font-size: 16px;
+  line-height: @line-height_text+3px;
+}
+.main-header__wrapper {
+  display: block;
+  position: relative;
+}
+.main-header__wrapper:before,
+.main-header__wrapper:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 16px;
+  width: 2px;
+  background: #dcdddf;
+  top: 50%;
+  margin-top: -8px;
+}
+.main-header__wrapper:after {
+  right: 0;
+}
+.data {
+  font-family: @Tahoma;
+  font-size: @font-size_main-text;
+  line-height: @line-height_text;
+  color: #9a9a9a;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 9px;
+  padding-bottom: 2px;
+}
+.data_2 {
+  font-family: @Tahoma;
+  font-size: @font-size_main-text;
+  line-height: @line-height_text;
+  color: #9a9a9a;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.main_data {
+  font-family: @Tahoma;
+  font-size: @font-size_main-text;
+  line-height: @line-height_text;
+  color: #9a9a9a;
+  font-weight: normal;
+  padding-top: 2px;
+  margin: 0;
+}
+
+
+
+.main_link:hover {
+  background: #f0f0f0;
+  text-decoration: none;
+  transition: background .2s;
+}
+.main_link:active,
+.main_link:focus {
+  background: #f0f0f0;
+  text-decoration: none;
+}
+.main_link:visited {
+  background: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+.main_article_link {
+  font-family: @Tahoma;
+  font-size: @font-size_main-text;
+  line-height: @line-height_text;
+  color: #34373a;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Verhovna_rada {
+  font-size: @font-size_main-text+1px !important;
+}
+.main_article_link:hover,
+.main_article_link:active,
+.main_article_link:focus,
+.main_article_link:visited {
+  text-decoration: none;
+  color: #343739;
+  transition: background .2s;
+}
+
+.two_link {
+  margin-bottom: 10px;
+}
+.two_link:hover,
+.two_link:active
+.two_link:focus {
+  background: #f0f0f0;
+  text-decoration: none;
+}
+
+.two_link:visited {
+  background: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+.article_link {
+  font-family: @Tahoma;
+  font-size: @font-size_main-text;
+  line-height: @line-height_text;
+  color: #34373a;
+  text-decoration: none;
+}
+.article_link:hover{
+  text-decoration: none;
+
+}
+.article_link:visited,
+.article_link:focus,
+.article_link:active {
+  text-decoration: none;
+  color: #343739;
+  outline: none;
+
+}
+
+
+
+.autor {
+  font-family: @Tahoma;
+  font-size: @font-size_main-text;
+  line-height: @line-height_text;
+  color: @orange_text;
+  text-decoration: none;
+}
+.label_warning {
+  color: #4a4336;
+  background: @orange;
+  font-size: 10.67px;
+  font-family: @Tahoma;
+  padding: 5px 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+
+}
+.title {
+  font-family: @Tahoma;
+  font-size: 14.67px;
+  line-height: @line-height_text;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.title_big {
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  line-height: 10.5px;
+}
+.button {
+  background: @orange;
+  color: #35383a;
+  font-size: 14.67px;
+  line-height: @line-height_text;
+  font-weight: bold;
+  padding: 10px 18px;
+  text-transform: uppercase;
+}
+.results {
+  color: #34383a;
+  font-family: @Tahoma;
+  font-size: @font-size_main-text;
+  line-height: 12.67px;
+}
+.button_center {
+  text-align: center;
+}
+.answer {
+  color: #34383a;
+  font-family: "Tahoma Bold", sans-serif;
+  font-size: @font-size_main-text+1px;
+  line-height: @line-height_text;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+  left: 19px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cccfd2;
+  margin-right: 40px;
+}
+
+.threedots {
+  text-decoration: underline;
+  color: @orange_text;
+  font-family: @Tahoma;
+  font-size: @font-size_main-text;
+  line-height: @line-height_text;
+}
+.questions {
+  color: #343739;
+  font-family: @Tahoma;
+  font-size: @font-size_main-text;
+  line-height: @line-height_text+3px;
+}
+.img_text {
+  padding-left: 40px;
+}
+.retreat_block {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.glyphicon-camera {
+  position: relative;
+  left: 15px;
+}
+.glyphicon_right {
+  position: relative;
+  left: 20px;
+}
+.glyphicon_right_right {
+  position: relative;
+  left: 30px;
+}
+.nav > li:first-child {
+  margin-left: -40px;
+}
+.nav > li > a {
+  padding: 15px 20px;
+}
+
+.text_footer {
+  font-family: @Tahoma;
+  font-size: 9px;
+  line-height: 11px;
+  color: #b4bcc3;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 45px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b4bcc3;
+}
+.nav_footer_link {
+  font-family: @Tahoma;
+  font-size: 10px;
+  color: #ffffff;
+ line-height: 11px;
+}
+
+
+footer .nav > li > a:hover,
+footer .nav > li > a:focus {
+  background: #505a60;
+  transition: background .2s;
+  color: white;
+}
+.nav_footer > li > a {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.nav_footer > li:first-child > a {
+  padding: 10px 15px;
+  margin-left: 20px;
+}
